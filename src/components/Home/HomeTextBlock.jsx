@@ -1,14 +1,13 @@
-// import { TemplateTextImageBlock } from "../../template";
 import { useState, useEffect } from "react";
 import { urlFor, client } from "../../client.ts";
-import './About.css';
+import './Home.css';
 
-function AboutTextBlock() {
+function HomeTextBlock() {
   const [textOnly, setText] = useState([]);
   useEffect(() => {
     client
       .fetch(
-        `*[_type == "aboutTextBlock"].TextImageBlock{
+        `*[_type == "homeTextBlock"].TextImageBlock{
         heading,
         tagline,
         body,
@@ -101,6 +100,4 @@ function AboutTextBlock() {
   );
 }
 
-export default AboutTextBlock;
-  
-
+export default HomeTextBlock;

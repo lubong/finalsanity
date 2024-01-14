@@ -1,19 +1,19 @@
 import { useState, useEffect } from "react";
 import { urlFor, client } from "../../client.ts";
-import './About.css';
+import './Locations.css';
 
-function AboutGallery() {
+function LocationsGallery() {
   const [gallery, setGallery] = useState([]);
   useEffect(() => {
     client
-      .fetch(`*[_type == "aboutImageGallery"].ImageGallery`)
+      .fetch(`*[_type == "locationsImageGallery"].ImageGallery`)
       .then((data) => setGallery(data))
       .catch(console.error);
   }, []);
 
   return (<>
     {gallery.map((galleryx) => (
-      <section className="container gallery text-center ">
+      <section className="container gallery text-center">
         <>
           <h5 className="text-block-text-heading">{galleryx["heading"]}</h5>
           <h6 className="text-block-text-subtitle">{galleryx["tagline"]}</h6>
@@ -21,11 +21,11 @@ function AboutGallery() {
 
           <div className="row gallery-images row-cols-2 row-cols-md-4">
             {galleryx["ImageGallery"].map((image) => (
-              <div className="col ">
+              <div className="col">
                 <a
                   href={image["linkURL"]}
                   target="_blank" rel="noreferrer"
-                  className="card gallery-image-card border border-0"
+                  className="card gallery-image-card border border-0 "
                 >
                   <img
                     src={
@@ -56,5 +56,4 @@ function AboutGallery() {
   );
 }
 
-export default AboutGallery;
-
+export default LocationsGallery;

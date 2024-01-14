@@ -22,7 +22,7 @@ function AboutTestimonials() {
             <div className="row gallery-images g-2">
               {text["testimonials"].map((testimonial) => (
                 <div className="col-lg-4">
-                  <div className="card p-3 text-center px-4">
+                  <div className="card p-3 text-center px-4 border border-0">
                     <div className="ratio ratio-1x1 w-50 mx-auto">
                       <img
                         src={testimonial ? urlFor(testimonial).url() : ""}
