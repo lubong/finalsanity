@@ -3,6 +3,7 @@ import React from 'react'
 import { About } from "./container"
 import { Navbar } from "./components"
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import './App.css';
 
 const App = () => {
   return (

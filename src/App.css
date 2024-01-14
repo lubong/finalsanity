@@ -1,0 +1,171 @@
+/* main css */
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
+/* ------------------Text-Block ---------------------*/
+/* Text-Block-Text */
+.text-block {
+  padding: 2rem 2rem 0 2rem;
+}
+
+.text-block-text-heading-green {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  font-weight: bolder;
+  color: rgb(0, 126, 59);
+}
+
+.text-block-text-heading {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  text-transform: capitalize;
+  color: rgb(0, 0, 0);
+}
+
+.text-block-text-subtitle {
+  margin-bottom: 0.5rem;
+  text-transform: capitalize;
+  font-weight: bold;
+  color: rgb(248, 103, 0);
+  padding-bottom: 0.5rem;
+}
+
+.text-block-text-body {
+  font-size: larger;
+}
+
+/* Text-Block-Image */
+.text-block-image-card {
+  filter: brightness(100%) blur(0px);
+  margin: 0 0 1rem 0;
+}
+
+.text-block-image-card:hover {
+  filter: brightness(90%);
+  cursor: pointer;
+}
+
+.text-block-image-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
+}
+
+.text-block-image-text-overlay {
+  color: rgb(255, 255, 255);
+  background: rgb(0, 126, 59);
+  position: absolute;
+  bottom: 0;
+  padding: 3px;
+  padding-bottom: 0px;
+  padding-top: 5px;
+  border-radius: 5px;
+}
+
+.text-block-image-text-overlay:hover {
+  text-shadow: none;
+  color: rgba(255, 255, 255, 0);
+  background: #ffffff00;
+  transition: 0.2s;
+}
+
+/* Text-Block-Button */
+.text-block-btn {
+  margin-top: 1.5rem;
+  border-color: rgb(0, 126, 59);
+  font-weight: bold;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+  transition: 0.2s;
+}
+
+/* --------------------Gallery-Image------------------*/
+.gallery {
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+}
+
+.gallery-images {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.gallery-image-card {
+  filter: brightness(80%) blur(0px);
+  margin: 0 0.25rem 1rem 0.25rem;
+}
+/* the anchor tag */
+
+.gallery-image-card:hover {
+  filter: brightness(100%) blur(0px);
+  transform: scale(1.02);
+  transition: 0.75s ease;
+  cursor: pointer;
+  box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.175);
+}
+
+.gallery-image-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.175);
+}
+
+.gallery-image-text {
+  text-align: start;
+  padding: 0 1rem auto 0;
+  color: white;
+  text-shadow: 1px 1px 1px black;
+}
+
+.gallery-image-text-title {
+  text-transform: capitalize;
+  font-weight: bolder;
+  margin-bottom: 1rem;
+}
+
+.gallery-image-text-caption {
+  font-size: medium;
+}
+
+.gallery-image-text-body {
+  font-weight: lighter;
+  margin-top: 1rem;
+}
+
+/* navbar css */
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.navbar-toggler {
+  border: 0 solid white;
+}
+
+.card {
+  --bs-card-border-width: none;
+}
+
+.btn-outline-light {
+  --bs-btn-border-color: none;
+}
+
+.text-green-col {
+  color: rgb(0, 126, 59);
+}
+
+.text-black-col {
+  color: rgb(0, 0, 0);
+}
+
+.orange-col {
+  color: rgb(248, 103, 0);
+}

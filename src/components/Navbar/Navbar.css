@@ -1,0 +1,17 @@
+.padd {
+  padding-top: 85px;
+}
+
+.bg-body-light-grey {
+  background-color: rgba(240, 240, 240, 0.3);
+  backdrop-filter: blur(10px);
+}
+
+/* navbar css */
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.navbar-toggler {
+  border: 0 solid white;
+}

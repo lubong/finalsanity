@@ -1,6 +1,7 @@
 // import { TemplateTextImageBlock } from "../../template";
 import { useState, useEffect } from "react";
 import { urlFor, client } from "../../client.ts";
+import './About.css';
 
 function AboutTextBlock() {
   const [textOnly, setText] = useState([]);
