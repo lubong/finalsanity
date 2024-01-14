@@ -1,7 +1,7 @@
 import React from 'react'
 
 import { About , Home , Locations, Career, InvestorInfo, News, Promotions} from "./container"
-import { Navbar } from "./components"
+import { Navbar , Footer} from "./components"
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import './App.css';
 
@@ -19,6 +19,7 @@ const App = () => {
         <Route path="/Career" element={<Career />} />
         <Route path="/JoinUs" element={<InvestorInfo />} />
       </Routes>
+      <Footer />
       </BrowserRouter>
     </div>
   )

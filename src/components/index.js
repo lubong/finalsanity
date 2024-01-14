@@ -1,5 +1,5 @@
 export { default as Navbar } from "./Navbar/Navbar";
-// export { default as Footer } from "./Footer/Footer";
+export { default as Footer } from "./Footer/Footer";
 // Home
 export { default as HomeBanner } from "./Home/HomeBanner";
 export { default as HomeTextBlock } from "./Home/HomeTextBlock";
