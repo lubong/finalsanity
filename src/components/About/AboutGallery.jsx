@@ -41,7 +41,7 @@ function AboutGallery() {
                     <h6 className="card-subtitle gallery-image-text-title">
                       {image["caption"]}
                     </h6>
-                    <p className="card-body gallery-image-text-body">
+                    <p className="card-text gallery-image-text-body">
                       {image["desc"]}
                     </p>
                   </div>

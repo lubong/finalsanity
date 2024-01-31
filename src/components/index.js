@@ -17,6 +17,8 @@ export { default as CareerTextBlock } from "./Career/CareerTextBlock";
 //Location
 export { default as LocationsGallery } from "./Locations/LocationsGallery";
 export { default as LocationsTextBlock } from "./Locations/LocationsTextBlock";
+export { default as LocationsMap} from "./Locations/LocationsMap";
+
 //News
 export { default as NewsPosts } from "./News/NewsPosts";
 //Investor Info

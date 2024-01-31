@@ -20,7 +20,8 @@ import {ImageGallery} from './PageTypes/ImageGallery'
 
 import {LocationTextBlock} from './Location/LocationTextBlock'
 import {LocationsImageGallery} from './Location/LocationsImageGallery'
+import {LocationsMap} from './Location/LocationsMap'
 
 import {InvestorInfoTextBlock} from './InvestorInfo/InvestorInfoTextBlock'
 
-export const schemaTypes = [InvestorInfoTextBlock, NewsPosts, CareerJobs, CareerTextBlock, PromoTextBlock, PromoItems, AboutTestimonials , AboutTextBlock, AboutImageGallery, HomeBanner, HomeCardImages, HomeTextBlock , ImageGallery , TextImageBlock, LocationTextBlock, LocationsImageGallery]
+export const schemaTypes = [InvestorInfoTextBlock, NewsPosts, CareerJobs, CareerTextBlock, PromoTextBlock, PromoItems, AboutTestimonials , AboutTextBlock, AboutImageGallery, HomeBanner, HomeCardImages, HomeTextBlock , ImageGallery , TextImageBlock, LocationTextBlock, LocationsImageGallery, LocationsMap]

@@ -17,7 +17,7 @@ function Navbar() {
             />
           </a>
           <button
-            className="navbar-toggler"
+            className="navbar-toggler border border-0"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarNav"
