@@ -19,7 +19,7 @@ function LocationsGallery() {
           <h6 className="text-block-text-subtitle">{galleryx["tagline"]}</h6>
           <p className="text-block-text-body">{galleryx["body"]}</p>
 
-          <div className="row gallery-images row-cols-2 row-cols-md-4">
+          <div className="row gallery-images row-cols-2 row-cols-lg-4">
             {galleryx["ImageGallery"].map((image) => (
               <div className="col">
                 <a

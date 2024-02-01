@@ -1,15 +1,31 @@
-// import { useState, useEffect } from "react";
-// import { urlFor, client } from "../../client.ts";
+import { useState, useEffect } from "react";
+import { client } from "../../client.ts";
 import './Locations.css';
 
 function LocationsMap() {
-    return(      
-    <div className="ratio ratio-16x9 w-75 mx-auto my-5 content-box">
+  const [storemap, setStoreMap] = useState([]);
+  useEffect(() => {
+    client
+      .fetch(`*[_type == "locationsMap"]`)
+      .then((data) => setStoreMap(data))
+      .catch(console.error);
+  }, []);
+  
+  
+  return(   
+  <>  
+    {storemap.map((mapx) => (
+    <div className='py-2'>
+    <h3 className='text-block-text-heading'>{mapx.mapTitle}</h3>
+    <div className="ratio ratio-16x9 w-auto mx-3 content-box">
     <iframe title="map"
-      src="https://www.google.com/maps/d/embed?mid=1mD5ysLpAiA2w_9wL4s_svLRGUnihERI&ehbc=2E312F"
+      src={mapx.mapURL}
       loading="lazy"
     ></iframe>
-  </div>
+    </div>
+    </div>
+    ))}
+    </>
 );
 };
 

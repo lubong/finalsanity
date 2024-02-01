@@ -6,8 +6,14 @@ export const LocationsMap = defineType({
   title: '[Locations;3] Map',
   fields: [
     defineField({
+        name: 'mapTitle',
+        type: 'string',
+        title: 'Name your Map',
+        description: '(Optional)'
+    }),
+    defineField({
         name: 'mapURL',
-        type: 'ImageGallery',
+        type: 'string',
         title: 'Add the map URL',
         validation: Rule => Rule.required()    
     }),
