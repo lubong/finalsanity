@@ -24,6 +24,6 @@ import {LocationsMap} from './Location/LocationsMap'
 
 import {InvestorInfoTextBlock} from './InvestorInfo/InvestorInfoTextBlock'
 
-import { Footer } from './Footer/Footer'
+import { FooterLinks } from './Footer/FooterLinks'
 
-export const schemaTypes = [Footer, InvestorInfoTextBlock, NewsPosts, CareerJobs, CareerTextBlock, PromoTextBlock, PromoItems, AboutTestimonials , AboutTextBlock, AboutImageGallery, HomeBanner, HomeCardImages, HomeTextBlock , ImageGallery , TextImageBlock, LocationTextBlock, LocationsImageGallery, LocationsMap]
+export const schemaTypes = [FooterLinks, InvestorInfoTextBlock, NewsPosts, CareerJobs, CareerTextBlock, PromoTextBlock, PromoItems, AboutTestimonials , AboutTextBlock, AboutImageGallery, HomeBanner, HomeCardImages, HomeTextBlock , ImageGallery , TextImageBlock, LocationTextBlock, LocationsImageGallery, LocationsMap]
